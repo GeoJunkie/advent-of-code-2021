@@ -6023,7 +6023,6 @@ function day2part2() {
   ];
 
   var compliantPasswords = 0;
-  console.log(input.length);
 
   // Read input
   for (line of input) {

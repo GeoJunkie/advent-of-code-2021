@@ -1,11 +1,23 @@
+li {
+    font-size: 1.5rem;
+}
+
 ul ul li {
     background-color: red;
     color: green;
-    max-width: 25%;
-    text-align: center;
+    margin: auto;
 }
 
 li.completed {
     background-color: green;
     color: red;
 }
+
+li.in-progress {
+    border: 3px dotted green ;
+}
+
+.short, .full {
+    padding-left: 10%;
+}
+

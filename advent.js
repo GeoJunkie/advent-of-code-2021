@@ -1,5 +1,5 @@
 function runDay(event) {
-  if (event.target.className === "completed") {
+  if (event.target.className === "completed" || event.target.className === "in-progress") {
     const targetId = event.target.id,
         [day, part] = targetId.split("-"),
         functionName = `day${day}part${part}()`,
