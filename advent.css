@@ -1,0 +1,11 @@
+ul ul li {
+    background-color: red;
+    color: green;
+    max-width: 25%;
+    text-align: center;
+}
+
+li.completed {
+    background-color: green;
+    color: red;
+}
