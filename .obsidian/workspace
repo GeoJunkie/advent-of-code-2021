@@ -1,0 +1,93 @@
+{
+  "main": {
+    "id": "9120ba92973dc3b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "d650a7b59442236e",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "4/README.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "677b825f4c0de15f",
+    "type": "split",
+    "children": [
+      {
+        "id": "a759718ceaa4363d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "74423b60fa127510",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "ef5740fd45f1300b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "91256fe523efe953",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d3c02f8ce0df5c9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "06bda5a99b2096af",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "4/README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "4/README.md",
+    "3/README.md",
+    "1/README.md"
+  ]
+}

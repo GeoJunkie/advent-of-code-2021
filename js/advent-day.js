@@ -3,6 +3,7 @@ const dayHeader = document.querySelector(".day"),
   day = path[path.length - 2];
 
   dayHeader.innerText = `Day ${day}`;
+  document.title = `Day ${day} | Taco's Advent of Code 2020`;
 
 const buttons = document.getElementsByClassName("buttons")[0],
   solvers = [];
