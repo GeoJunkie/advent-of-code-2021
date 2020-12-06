@@ -1,0 +1,41 @@
+{
+  // Place your advent-of-code-2020 workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  "Print to console": {
+    "scope": "javascript,typescript",
+    "prefix": "log",
+    "body": ["console.log('$1');", "$2"],
+    "description": "Log output to console"
+  },
+  "Daily Advent JavaScript": {
+    "scope": "javascript,typescript",
+    "prefix": "advent",
+    "body": ["console.log('$1');", "$2"],
+    "description": "Log output to console"
+  },
+  "Daily Advent HTML": {
+    "scope": "html",
+    "prefix": "advent",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html>",
+      "<head>",
+      "<title>Day ${1:day} | Taco's Advent of Code 2020</title>",
+      "</head>",
+      "<body>",
+      "<h1>Taco's Advent of Code 2020</h1>",
+      "<h2>Day ${1:day}</h2>",
+      "<pre id=\"sample\">${2:sample}</pre>",
+      "<pre id=\"input\">${3:input}</pre>",
+      "<script src=\"part1.js\"></script>",
+      "<script src=\"part2.js\"></script>",
+      "</body>",
+      "</html>"
+    ]
+  },
+}

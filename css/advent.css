@@ -1,0 +1,148 @@
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: fantasy, sans-serif;
+  background: #f00;
+  text-align: center;
+}
+
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: red;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #afa;
+  font-size: 30px;
+}
+
+.weekdays li {
+  display: inline-block;  
+  width: 13.6%;
+  color: #f66;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  /* background: #fee; */
+  margin: 0;
+  background-image: url("../img/advent-of-code.jpg");
+  background-size: contain;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 0;
+  border: 1px red solid;
+  font-size: 30px;
+  color: #f00;
+  background-color: green;
+}
+
+.days li:after {
+  content: "";
+  display: block;
+  padding-bottom: 43.2%;
+}
+
+.days li:before {
+  content: "";
+  display: block;
+  padding-top: 43.2%;
+}
+
+/* Highlight the "current" day */
+.days li.in-progress {
+  background-color: rgba(255, 100, 100, 0.5);
+  color: white;
+}
+
+/* Mark off completed days */
+.days li.completed,
+.days li.not-a-day {
+  background: none;
+  color: green;
+}
+.days li.not-a-day {
+  border: none;
+}
+
+/* For individual days */
+
+/* Hide the data */
+#sample,
+#input {
+  display: none;
+}
+
+h1, h2 {
+  margin: 10px 0;
+  color: #fff;
+}
+
+h2 {
+  background-color: #85ff85;
+}
+
+button {
+  background-color: green;
+  color: #f00;
+  padding: 10px;
+  font-size: 30px;
+  margin: 20px;
+}
+
+a {
+  font-size: 30px;
+  color: #00ff00;
+}
+
+.result {
+  line-height: 20px;
+  padding: 10px;
+  min-width: 25%;
+  background-color: #00ff00;
+  border-color: #f66;
+  margin: 10px 33%;
+  font-family: monospace;
+  font-size: 24px;
+}
