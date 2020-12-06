@@ -1,5 +1,4 @@
-const part1 = new Problem( () => {
-    return('YAY');
-})
-
-solvers.push(part1);
+solvers.push(new Problem( () => {
+    const input = document.querySelector('#sample').innerText.split('\n');
+    return('NOT READY');
+}));

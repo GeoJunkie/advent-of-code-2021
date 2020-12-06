@@ -12,30 +12,43 @@
     "body": ["console.log('$1');", "$2"],
     "description": "Log output to console"
   },
-  "Daily Advent JavaScript": {
-    "scope": "javascript,typescript",
-    "prefix": "advent",
-    "body": ["console.log('$1');", "$2"],
-    "description": "Log output to console"
-  },
   "Daily Advent HTML": {
     "scope": "html",
     "prefix": "advent",
     "body": [
       "<!DOCTYPE html>",
       "<html>",
-      "<head>",
-      "<title>Day ${1:day} | Taco's Advent of Code 2020</title>",
-      "</head>",
-      "<body>",
-      "<h1>Taco's Advent of Code 2020</h1>",
-      "<h2>Day ${1:day}</h2>",
-      "<pre id=\"sample\">${2:sample}</pre>",
-      "<pre id=\"input\">${3:input}</pre>",
-      "<script src=\"part1.js\"></script>",
-      "<script src=\"part2.js\"></script>",
-      "</body>",
+      "  <head>",
+      "    <title>Day ${1:day} | Taco's Advent of Code 2020</title>",
+      "  </head>",
+      "  <body>",
+      "    <h1>Taco's Advent of Code 2020</h1>",
+      "    <h2>Day ${1:day}</h2>",
+      "    <div class=\"buttons\">",
+      "    <button id=\"part1\" class=\"not-started\">Part 1</button>",
+      "    <button id=\"part2\" class=\"not-started\">Part 2</button></div>",
+      "    <div class=\"result\">&nbsp;</div>",
+      "    <a href=\"../index.html\">Go Back</a>",
+      "    <pre id=\"sample\">${2:sample}</pre>",
+      "    <pre id=\"input\">${3:input}</pre>",
+      "    <link rel=\"stylesheet\" href=\"../css/advent.css\" />",
+      "    <script src=\"../js/advent-day.js\"></script>",
+      "    <script src=\"part1.js\"></script>",
+      "    <script src=\"part2.js\"></script>",
+      "  </body>",
       "</html>"
-    ]
+    ],
+    "description": "HTML for daily calendar"
   },
+  "Daily Advent JavaScript": {
+    "scope": "javascript",
+    "prefix": "advent",
+    "body": [
+      "const part${1:part} = new Problem( () => {",
+      "    return('NOT READY');",
+      "})",
+      "",
+      "solvers.push(part${1:part});",
+    ]
+  }
 }

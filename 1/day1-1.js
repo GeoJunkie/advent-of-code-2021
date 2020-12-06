@@ -1,3 +1,11 @@
+const part1 = new Problem( () => {
+  input = document.getElementById("sample");
+
+    return('NOT READY');
+})
+
+solvers.push(part1);
+
 function day1part1() {
   const input = [
     1863,
