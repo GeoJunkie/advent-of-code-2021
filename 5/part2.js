@@ -31,8 +31,8 @@ solvers.push(
 
     for (let i = 1; i < seats.length; i++) {
       let seat = seats[i];
-      if (seats[i - 1] !== seat - 1 || seats[i + 1] !== seat + 1) {
-        return seat;
+      if (seats[i + 1] !== seat + 1) {
+        return seat + 1;
       }
     }
   })
