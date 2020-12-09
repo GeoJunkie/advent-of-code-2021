@@ -2,8 +2,8 @@ const dayHeader = document.querySelector(".day"),
   path = window.location.pathname.split("/"),
   day = path[path.length - 2];
 
-  dayHeader.innerText = `Day ${day}`;
-  document.title = `Day ${day} | Taco's Advent of Code 2020`;
+dayHeader.innerText = `Day ${day}`;
+document.title = `Day ${day} | Taco's Advent of Code 2020`;
 
 const buttons = document.getElementsByClassName("buttons")[0],
   solvers = [];
@@ -15,7 +15,14 @@ function runPart(event) {
       id = targetId.match(regex)[0] - 1,
       resultDiv = document.querySelector(".result");
 
-    const solver = solvers[id].solve();
+    var input;
+
+    if (document.querySelector("#use-sample").checked) {
+      input = document.querySelector("#sample").innerText;
+    } else {
+      input = document.querySelector("#input").innerText;
+    }
+    const solver = solvers[id].solve(input);
 
     resultDiv.innerText = solver;
   }

@@ -148,3 +148,10 @@ a {
   font-size: 24px;
   font-weight: 900;
 }
+
+.checkboxes {
+  color: #00fc00;
+  width: 25%;
+  margin: auto;
+  padding: 5px;
+}

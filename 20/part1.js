@@ -1,4 +1,4 @@
-solvers.push(new Problem( () => {
-    const input = document.querySelector('#sample').innerText.split('\n');
-    return('NOT READY');
+solvers.push(new Problem( (rawInput) => {
+    const input = rawInput.split('\n');
+    return(input);
 }));
