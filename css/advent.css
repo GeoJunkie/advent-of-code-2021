@@ -108,10 +108,12 @@ body {
 
 /* For individual days */
 
-/* Hide the data */
 #sample,
 #input {
-  display: none;
+  font-family: monospace;
+  background-color: black;
+  color: white;
+  text-align: left;
 }
 
 h1, h2 {
@@ -143,6 +145,7 @@ a {
   min-width: 25%;
   background-color: #00ff00;
   border-color: #f66;
+  color: #000;
   margin: 10px 33%;
   font-family: monospace;
   font-size: 24px;
@@ -154,4 +157,25 @@ a {
   width: 25%;
   margin: auto;
   padding: 5px;
+}
+
+#use-sample {
+  display: inline-block;
+}
+
+.day-desc {
+  background: #0f0f23; /*337 x 5*/
+  color: #cccccc;
+  font-family: "Source Code Pro", monospace;
+  font-size: 14pt;
+  min-width: 60em;
+  text-align: left;
+}
+
+.day-desc h2 {
+  color: #ffffff;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    white-space: nowrap;
+    background: inherit;
 }
