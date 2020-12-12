@@ -108,8 +108,7 @@ body {
 
 /* For individual days */
 
-#sample,
-#input {
+pre {
   font-family: monospace;
   background-color: black;
   color: white;
